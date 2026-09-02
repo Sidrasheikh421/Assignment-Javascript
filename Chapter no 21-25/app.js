@@ -66,6 +66,17 @@ document.write("<br>");
 document.write("Message :"  +  message + "<br>");
 document.write("After replacement :"  +   newMessage + "<br>");
 
+//Question 9
+
+var numString = "472";
+var num = Number(numString);
+
+document.write("<br>");
+document.write("Value :" +  numString + "<br>");
+document.write("Type :" +  typeof numString + "<br>");
+document.write("Value :" +  num + "<br>");
+document.write("Type :" +  typeof num + "<br>");
+
 //Question 10
 
 var userInput = "peanuts";
