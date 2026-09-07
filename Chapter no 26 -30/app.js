@@ -85,4 +85,4 @@ if (userGuess === randomNumber){
 }
 else{
     document.write("Sorry, the correct number was: " + randomNumber + ". Better luck next time!<br>");
-}
+}  
