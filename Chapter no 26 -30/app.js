@@ -35,26 +35,27 @@ document.write("Random dice value: " + dice + "<br>");
 document.write("<br/>");
 
 //Question 5
-var coin1 = Math.floor(Math.random()* 2) + 1;
-var coin2 = Math.floor(Math.random() * 2) + 1;
 
-if (coin1 === 1) {
-    document.write("Random coin value: Tails<br>");
+var player1 = prompt("Enter the name of Player 1:");
+var coin1 = prompt(player1 + " Heads or Tails",).toLowerCase();
+var player2 = prompt("Enter the name of Player 2:");
+var coin2 = prompt(player2 + " Heads or Tails",).toLowerCase();
+
+
+var coinFlip = Math.random() * 2 ;
+var coinResult = Math.floor(coinFlip);
+
+
+
+if (coin1 === "tails") {
+    document.write(player1 + " flipped a coin and it landed on Tails<br>");
 
 }
 else {
-    document.write("Random coin value: Heads<br>");
+    document.write(player1 + " flipped a coin and it landed on Heads<br>");
 
 }
-document.write("<br/>");
-if (coin2 === 1) {
-    document.write("Random coin value: Heads<br>");
 
-}
-else {
-    document.write("Random coin value: Tails<br>");
-
-}
 document.write("<br/>");
 
 
