@@ -121,12 +121,12 @@ document.write ("</br>");
 
 //Question 7
 
-let sentece = prompt("Enter a sentence :");
+let words = prompt("Enter a words :");
 
 function countVowrls(sentence){
     let count = 0
-    for (let i = 0; i < sentence.length -1; i++){
-        let pair = sentence[i].toLowerCase() + sentence[i].toLowerCase();
+    for (let i = 0; i < words.length -1; i++){
+        let pair = words[i].toLowerCase() + sentence[i].toLowerCase();
 
         switch (pair){
 
@@ -168,10 +168,14 @@ function countVowrls(sentence){
     return count;
 
 }
-let countResult = countVowrls(sentece);
+let countResult = countVowrls(words);
 document.write(`Number of vowel pairs = ${countResult} <br>`);
 
 //Question 8 
+
+function meters(km){
+    return km * 1000;
+}
 
 function feet(km){
     return km * 3280.84;
@@ -184,16 +188,11 @@ function centimeters(km){
 }
 let km = Number(prompt("Enter distance in kilometers :"));
 
-let m =  meters(km);
-let f =  feet(km);
-let inch = inches(km);
-let cm = centimeters(km);
-
-document.write(`Distance = ${km} km <br>`);
-document.write(`Meters = ${m} <br>`);
-document.write(`Feet = ${f} <br>`);
-document.write(`Inches = ${inch} <br>`);
-document.write(`Centimeters = ${cm}`);
+document.write("Distance = " + km +"km" + "<br>");
+document.write("Meters = " + meters(km) + "<br>");
+document.write("Feet = " + feet(km) + "<br>");
+document.write("Inches = " + inches(km) + "<br>");
+document.write("Centimeters = " + centimeters(km));
 document.write("<br>");
 
 //Question 9 
