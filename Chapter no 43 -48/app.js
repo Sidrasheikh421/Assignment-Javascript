@@ -34,6 +34,31 @@ function previousImg(e){
     e.target.src = "./images/Bike.jpg"
 }
 
+//Question 5
+
+let increaseBtn = document.querySelector("#increase")
+
+increaseBtn.addEventListener("click", function() {
+   
+    let counterValue = document.querySelector("#counter")
+    counterValue.innerHTML += 1
+    
+
+    counterValue.innerHTML++
+})
+
+let decreaseBtn = document.querySelector("#decrease")
+
+decreaseBtn.addEventListener("click", function(){
+    let counterValue = document.querySelector("#counter")
+    
+    counterValue.innerHTML--
+    if(counterValue.innerHTML < 0){
+        counterValue.innerHTML = 0
+    }
+})
+
+
 
 
 
