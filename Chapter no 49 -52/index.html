@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+
+<body>
+    <!-- Question 1 -->
+    <form id="signupForm">
+        <label for="">First Name:</label>
+        <input type="firstname" id="firstName">
+        <br><br>
+
+        <label for="">Last Name:</label>
+        <input type="lastname" id="lastName">
+        <br><br>
+
+        <label for="">Email:</label>
+        <input type="email" id="email">
+        <br><br>
+
+        <label for="">Password:</label>
+        <input type="password" id="password">
+        <br><br>
+
+        <button type="submit">Sign Up</button>
+
+        <div id="result"></div>
+    </form>
+
+    <!-- Question 2 -->
+
+    <h1>Item Details</h1>
+    <h2>Mobile Phone</h2>
+    <p>Samsung Galaxy is a popular smartphone
+        with a beautiful design.
+    </p>
+    <p id="moreText" style="display: none;">
+        It has a high-quality camera, a powerful
+        processor, long battery life and a large
+        display. It is useful for photography,
+        gaming, internet browsing and daily activities.
+        It also provides excellent performance and
+        storage capacity.
+    </p>
+
+    <button id="readMore">Read More</button>
+
+    <!-- Question 3 -->
+
+    <form id="studentForm">
+
+        Name:
+        <input type="text" id="name" required>
+        <br><br>
+
+        Email:
+        <input type="email" id="email" required>
+        <br><br>
+
+        Course:
+        <input type="text" id="course" required>
+        <br><br>
+
+        <button type="submit">Add Student</button>
+
+    </form>
+
+    <h2>Student Table</h2>
+
+    <table border="1" cellpadding="10">
+
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Course</th>
+            <th>Edit</th>
+            <th>Delete</th>
+        </tr>
+
+        <tbody id="tableData"></tbody>
+
+    </table>
+
+    <br>
+
+    <div id="editForm" style="display:none;">
+
+        <h2>Edit Student</h2>
+
+        Name:
+        <input type="text" id="editName">
+        <br><br>
+
+        Email:
+        <input type="email" id="editEmail">
+        <br><br>
+
+        Course:
+        <input type="text" id="editCourse">
+        <br><br>
+
+        <button onclick="updateStudent()">Update</button>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

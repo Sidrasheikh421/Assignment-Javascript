@@ -20,7 +20,7 @@ let buttons = document.querySelectorAll("button")
 
 for(let i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("click",function(){
-        console.log(buttons[i].parentNode.parentNode.remove())
+    buttons[i].parentNode.parentNode.remove()
     })
 }
 
@@ -36,27 +36,31 @@ function previousImg(e){
 
 //Question 5
 
-let increaseBtn = document.querySelector("#increase")
+let count = 0;
 
-increaseBtn.addEventListener("click", function() {
-   
-    let counterValue = document.querySelector("#counter")
-    counterValue.innerHTML += 1
-    
+let increase = document.getElementById("increase");
+let decreaseBtn = document.getElementById("decrease");
+let counterValue = document.getElementById("counter");
 
-    counterValue.innerHTML++
-})
+// Increase Button
+increase.addEventListener("click", function() {
 
-let decreaseBtn = document.querySelector("#decrease")
+    count++;
 
-decreaseBtn.addEventListener("click", function(){
-    let counterValue = document.querySelector("#counter")
-    
-    counterValue.innerHTML--
-    if(counterValue.innerHTML < 0){
-        counterValue.innerHTML = 0
+    counterValue.innerHTML = count;
+
+});
+
+// Decrease Button
+decreaseBtn.addEventListener("click", function() {
+
+    if (count > 0) {
+        count--;
     }
-})
+
+    counterValue.innerHTML = count;
+
+});
 
 
 

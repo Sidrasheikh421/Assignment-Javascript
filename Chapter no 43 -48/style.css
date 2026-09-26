@@ -3,16 +3,5 @@
     flex-direction: row;
     align-items: flex-start;
 }
-#increase{
-    background-color: green;
-    color: white;
-    border: none;
-    
 
 
-}
-#decrease{
-    background-color: red;
-    color: white;
-    border: none;
-}
