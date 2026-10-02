@@ -38,7 +38,7 @@ document.getElementById("email").value = "alexbank@example.com";
 
 //Question 2
 
-// i. Get node type of element having id "form-content"
+// i. What is node type of element having id "form-content"
 
 var formContent = document.getElementById("form-content");
 
@@ -59,18 +59,18 @@ console.log(lastName.firstChild.nodeType);
 lastName.firstChild.nodeValue = "Last Name: Khan";
 
 
-// iv. Get first and last child of id "main-content"
+// iv. Get First and last child of id "main-content"
 
 var mainContent = document.getElementById("main-content");
 
-console.log(mainContent.firstElementChild);
-console.log(mainContent.lastElementChild);
+console.log(mainContent.firstChild);
+console.log(mainContent.lastChild);
 
 
 // v. Get next and previous siblings of id "lastName"
 
-console.log(lastName.nextElementSibling);
-console.log(lastName.previousElementSibling);
+console.log(lastName.nextSibling);
+console.log(lastName.previousSibling);
 
 
 // vi. Get parent node and node type of element having id "email"
@@ -78,4 +78,4 @@ console.log(lastName.previousElementSibling);
 var email = document.getElementById("email");
 
 console.log(email.parentNode);
-console.log(email.parentNode.nodeType);
+console.log(email.nodeType);
